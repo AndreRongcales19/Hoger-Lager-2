@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+
+.conatainer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper-left {
+    width: 50%;
+    height: 100vh;
+    background-color:rgba(255, 145, 249, 0.973);
+    float: left;
+}
+
+.wrapper-right {
+    width: 50%;
+    height: 100vh;
+    background-color:aquamarine;
+    float: left;
+}
+
+.title-wrapper {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size:x-large;
+}
+
+.versus {
+    width: 150px;
+
+}
+
+button {
+    margin: 1rem;
+}
+
+.wrapper-player {
+    text-align: center;
+    font-size: 100px;
+}
