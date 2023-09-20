@@ -1,15 +1,8 @@
 body {
-    /*background-image: url('../img/green\ background.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
     margin: 0;
-}
-
-.conatainer {
-    width: 100%;
-    height: 100vh;
-    position: relative;
 }
 
 .wrapper-left {
