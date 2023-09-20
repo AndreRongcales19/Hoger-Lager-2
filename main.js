@@ -10,5 +10,6 @@ function getRandomInt(max) {
   const myNumber2 = getRandomInt(6);
   console.log(myNumber2)  
 
+  
 
 
