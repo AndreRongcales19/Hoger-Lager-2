@@ -35,7 +35,12 @@ button {
     margin: 1rem;
 }
 
-.wrapper-player {
+.wrapper-dice1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.wrapper-dice2 {
     text-align: center;
     font-size: 100px;
 }
