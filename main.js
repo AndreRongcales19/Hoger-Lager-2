@@ -66,23 +66,22 @@ function getRandomInt(max) {
   const myNumber2 = getRandomInt(6);
   console.log(myNumber2) 
   secondDice.src = "./img/dice-" + myNumber2 + ".png"; 
+  //deerde dubbelsteen
 
-   //deerde dubbelsteen
-
-function getRandomInt(max) {
-  return Math.ceil(Math.random() * max);
-  }
-  const myNumber3 = getRandomInt(6);
-  console.log(myNumber3);
-  thirdDice.src = "./img/dice-" + myNumber3 + ".png"; 
-//vierde dubbelsteen
-
-function getRandomInt(max) {
-  return Math.ceil(Math.random() * max);
-  }
-  const myNumber4 = getRandomInt(6);
-  console.log(myNumber4);
-  fourthDice.src = "./img/dice-" + myNumber4 + ".png"; 
+  function getRandomInt(max) {
+    return Math.ceil(Math.random() * max);
+    }
+    const myNumber3 = getRandomInt(6);
+    console.log(myNumber3);
+    thirdDice.src = "./img/dice-" + myNumber3 + ".png"; 
+  //vierde dubbelsteen
+  
+  function getRandomInt(max) {
+    return Math.ceil(Math.random() * max);
+    }
+    const myNumber4 = getRandomInt(6);
+    console.log(myNumber4);
+    fourthDice.src = "./img/dice-" + myNumber4 + ".png"; 
 
   
   
