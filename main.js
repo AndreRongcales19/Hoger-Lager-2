@@ -5,6 +5,7 @@ const btnLower = document.querySelector(".lower");
 const btnStart = document.querySelector(".start");
 const yourScore = document.querySelector(".your-score");
 const computerScore = document.querySelector(".computer-score");
+const announcementBlock = document.querySelector(".announcement")
 
 const firstDice = document.querySelector('.first-dice');
 const secondDice = document.querySelector('.second-dice');
@@ -92,17 +93,20 @@ btnThrow.addEventListener('click', function () {
       yourPoints++;
       computerPoints--;
 
+      announcementBlock.textContent = "Je hebt gewonnen!";
       yourScore.textContent = yourPoints;
       computerScore.textContent = computerPoints;
     } else if(diceUserTotal < diceCompTotal) {
       // computer heeft gewonnen --> user krijgt - punt en computer + punt
       yourPoints--;
       computerPoints++;
-
+      
+      announcementBlock.textContent = "Je hebt verloren!"
       yourScore.textContent = yourPoints;
       computerScore.textContent = computerPoints;
     } else {
       // gelijkspel
+      announcementBlock.textContent = "Gooi het nog een keer!"
     }
   } else {
     // checken voor lager
@@ -111,6 +115,7 @@ btnThrow.addEventListener('click', function () {
       yourPoints++;
       computerPoints--;
       
+      announcementBlock.textContent = "Je hebt gewonnen!";
       yourScore.textContent = yourPoints;
       computerScore.textContent = computerPoints;
     } else if(diceUserTotal > diceCompTotal) {
@@ -118,12 +123,16 @@ btnThrow.addEventListener('click', function () {
       yourPoints--;
       computerPoints++;
 
+      announcementBlock.textContent = "Je hebt verloren!"
       yourScore.textContent = yourPoints;
       computerScore.textContent = computerPoints;
     } else {
       // gelijkspel
+      announcementBlock.textContent = "Gooi het nog een keer!"
     }
   }
+  
+
   btnThrow.disabled = true;
     btnStart.disabled = false;
   
@@ -138,8 +147,7 @@ btnThrow.addEventListener('click', function () {
   // thrownDice1.textContent = result1;
   // thrownDice2.textContent = result2;
 
-  // const announcementBlock = document.querySelector(".announcement")
-  // if (result1 > result2) {
+    // if (result1 > result2) {
   //   announcementBlock.textContent = "Je hebt gewonnen!";
   // } else {
   //   announcementBlock.textContent = "Je hebt verloren!"
