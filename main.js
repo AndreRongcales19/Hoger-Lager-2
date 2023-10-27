@@ -1,3 +1,16 @@
+const playButton = document.querySelector(".play-music");
+const muteButton = document.querySelector(".mute-music");
+const audio = new Audio("/audio/backgroundmusic.mp3");
+
+// audio play en mute //
+playButton.addEventListener("click", function(){
+    audio.play(); 
+    audio.muted = false;
+});
+muteButton.addEventListener("click", function(){
+    audio.muted = true;
+});
+
 // Html elementen binenenhalen
 const btnThrow = document.querySelector(".throw");
 const btnHigher = document.querySelector(".higher");
@@ -18,7 +31,6 @@ let diceUser1;
 let diceUser2;
 let diceComp1;
 let diceComp2;
-
 
 // buttons disabled maken
 btnThrow.disabled = true;
@@ -67,7 +79,7 @@ btnLower.addEventListener('click', function () {
   btnHigher.disabled = true;
   btnThrow.disabled = false;
 
-  high = false;
+  higher = false;
 })
 
 btnThrow.addEventListener('click', function () {
@@ -132,30 +144,9 @@ btnThrow.addEventListener('click', function () {
     }
   }
   
-
+  // Opnieuw spelen 
   btnThrow.disabled = true;
     btnStart.disabled = false;
-  
-
-
-
-  // const thrownDice1 = document.querySelector('.thrown-dice1');
-  // const thrownDice2 = document.querySelector('.thrown-dice2');
-
-  // const result1 = diceUser1 + diceUser2;
-  // const result2 = diceComp1 + diceComp2;
-  // thrownDice1.textContent = result1;
-  // thrownDice2.textContent = result2;
-
-    // if (result1 > result2) {
-  //   announcementBlock.textContent = "Je hebt gewonnen!";
-  // } else {
-  //   announcementBlock.textContent = "Je hebt verloren!"
-  // }
-
-  // if (result1 === result2) {
-  //   announcementBlock.textContent = "Gooi het nog een keer!"
-  // }
 });
 
 
