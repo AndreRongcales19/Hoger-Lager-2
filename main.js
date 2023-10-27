@@ -1,3 +1,16 @@
+const playButton = document.querySelector(".play-music");
+const muteButton = document.querySelector(".mute-music");
+const audio = new Audio("/audio/backgroundmusic.mp3");
+
+// audio play en mute //
+playButton.addEventListener("click", function(){
+    audio.play(); 
+    audio.muted = false;
+});
+muteButton.addEventListener("click", function(){
+    audio.muted = true;
+});
+
 // Html elementen binenenhalen
 const btnThrow = document.querySelector(".throw");
 const btnHigher = document.querySelector(".higher");
@@ -18,7 +31,6 @@ let diceUser1;
 let diceUser2;
 let diceComp1;
 let diceComp2;
-
 
 // buttons disabled maken
 btnThrow.disabled = true;
