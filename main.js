@@ -67,7 +67,7 @@ btnLower.addEventListener('click', function () {
   btnHigher.disabled = true;
   btnThrow.disabled = false;
 
-  high = false;
+  higher = false;
 })
 
 btnThrow.addEventListener('click', function () {
@@ -131,31 +131,8 @@ btnThrow.addEventListener('click', function () {
       announcementBlock.textContent = "Gooi het nog een keer!"
     }
   }
-  
-
   btnThrow.disabled = true;
     btnStart.disabled = false;
-  
-
-
-
-  // const thrownDice1 = document.querySelector('.thrown-dice1');
-  // const thrownDice2 = document.querySelector('.thrown-dice2');
-
-  // const result1 = diceUser1 + diceUser2;
-  // const result2 = diceComp1 + diceComp2;
-  // thrownDice1.textContent = result1;
-  // thrownDice2.textContent = result2;
-
-    // if (result1 > result2) {
-  //   announcementBlock.textContent = "Je hebt gewonnen!";
-  // } else {
-  //   announcementBlock.textContent = "Je hebt verloren!"
-  // }
-
-  // if (result1 === result2) {
-  //   announcementBlock.textContent = "Gooi het nog een keer!"
-  // }
 });
 
 
