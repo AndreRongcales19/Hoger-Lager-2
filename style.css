@@ -32,11 +32,21 @@ body {
 
 }
 
-button {
-    background-color: rgb(255, 119, 119);
+.play-music, .mute-music {
+    background-color: rgb(39, 255, 39);
     margin: 1rem;
+    width: 75px;
+    height: 20px;
+    font-weight: bolder;
+}
+
+.throw, .higher, .lower, .start {
+    background-color: rgb(255, 151, 109);
+    margin: 5px;
     width: 120px;
     height: 50px;
+    font-weight: bolder;
+    font-size: large;
 }
 
 .wrapper-dice1 {
