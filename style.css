@@ -38,6 +38,7 @@ body {
     width: 75px;
     height: 20px;
     font-weight: bolder;
+    border-radius: 20px;
 }
 
 .throw, .higher, .lower, .start {
@@ -47,6 +48,7 @@ body {
     height: 50px;
     font-weight: bolder;
     font-size: large;
+    border-radius: 20px;
 }
 
 .wrapper-dice1 {
