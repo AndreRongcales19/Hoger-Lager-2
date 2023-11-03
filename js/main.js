@@ -144,9 +144,22 @@ btnThrow.addEventListener('click', function () {
     }
   }
   btnThrow.disabled = true;
-    btnStart.disabled = false;
+  btnStart.disabled = false;
+
+  // om af te maken
+  
+  if (yourPoints > 0 && computerPoints > 0) {
+  
+  } else if(yourPoints == 0) {
+    // announcementBlock.textContent = "Je hebt verloren!"
+    window.location.href = "lost.html"
+  } else if(computerPoints == 0) {
+    // announcementBlock.textContent = "Je hebt gewonnen!"
+    window.location.href = "won.html"
+  }
 });
 
+  
 
 
 
